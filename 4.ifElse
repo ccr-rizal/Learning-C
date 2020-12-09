@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+   
+   int age = 19;
+   if(age>1 && age<18) {
+       printf("You are still child and not quilified to vote. :)");
+   }else if(age<110) {
+       printf("You are quilified to vote");
+   }else{
+       printf("Make sure you entered the correct age.");
+   }
+    
+    return 0;
+}
