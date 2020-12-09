@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int num1;
+    int num2;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    int sum = num1 + num2;
+    int subtraction = num1 - num2;
+    int multiplication = num1 * num2;
+    int quotient = num1 / num2;
+    int rem = num1 % num2;
+    printf("\nThe sum of %d and %d is %d", num1, num2, sum);
+    printf("\nThe differnce of %d and %d is %d", num1, num2, subtraction);
+    printf("\nThe product of %d and %d is %d", num1, num2, multiplication);
+    printf("\nWhen divided %d by %d, the quotient is %d and the remainder is %d", num1, num2, quotient, rem);
+
+    return 0;
+}
