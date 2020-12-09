@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() {
+    int num1;
+    int num2;
+    char op;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the operator(+,-,*,/): ");
+    scanf(" %c", &op);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    
+    int rem = num1 % num2;
+    int quotient = num1 / num2;
+    
+    if(op == '+') {
+        int result = num1 + num2;
+        printf("\nThe sum of %d and %d is %d", num1, num2, result);
+    } else if(op == '-') {
+        int result = num1 - num2;
+        printf("\nThe differnce of %d and %d is %d", num1, num2, result);
+    }else if(op == '*') {
+        int result = num1 * num2;
+        printf("\nThe product of %d and %d is %d", num1, num2, result);
+    } else if(op == '/') {
+        int result = num1 / num2;
+        printf("\nWhen divided %d by %d, the quotient is %d and the remainder is %d", num1, num2, quotient, rem);
+    }
+    
+    
+    return 0;
+}
