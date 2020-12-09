@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define PI 3.14   //This is how we define constants..
+int main() {
+    //Date Types
+    //1. Numbers
+    //C programming supports integers, float and double.
+    //2. Char
+    
+    int age = 19;
+    float height = 5.6;
+    double weight = 58.9;
+    char grade = 'A';
+    char name[50] = "Shishir Rijal";
+    printf("Hi, My name is %s. I am %d years old, %f feet tall and I weight %lf. I secured %c grade in 10th.",
+    name, age, height, weight, grade);
+    //PI = 12; This will produce error
+    printf("The value of PI is %f", PI);
+
+    return 0;
+}
