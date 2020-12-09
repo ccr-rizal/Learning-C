@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define PI 3.14
+int main() {
+   int radius = 14;
+   int length = 13;
+   int breadth = 12;
+   float areaOfCircle = PI * radius * radius;
+   int areaOfRectangle = length * breadth;
+   printf("The area of circle with radius %dm is %fsq. metre.\n", radius, areaOfCircle);
+   printf("The area of rectangle with length %dm and breadth %dm is %dsq. metre.", length, breadth, areaOfRectangle);
+   return 0;
+}
