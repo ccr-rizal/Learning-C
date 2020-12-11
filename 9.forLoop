@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+	int a,b;
+	
+	for(a=20,b=30; a<50,b<60; a++,b++){
+		printf("%d,%d\n",a,b);
+		}
+	
+// 	for(a=5; a<500; a+=20){
+// 		printf("%d\n",a);
+// 	}
+	
+	
+	return 0;
+}
