@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<string.h>
+struct student{
+	char name[30];
+	int id;
+	int marks;
+	char character[30];
+	
+};
+
+	int main()
+	{
+	
+	struct student s1;
+		strcpy(s1.name,"Shishir");
+		s1.id = 1;
+		s1.marks = 98;
+		strcpy(s1.character,"Well_Disciplined");
+
+	
+	printf("Student 1:\nName:%s\nID:%d\nMarks_Secured:%d\nCharacter:%s\n",s1.name,s1.id,s1.marks,s1.character);
+	
+	
+		getch();
+		return 0;
+	}
