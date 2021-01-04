@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int a[2][3] = {
+	{5,10,15},
+	{6,12,18}
+	};
+	printf("The value at array[1,1] is %d",a[1][1]);
+	
+
+	return 0;
+}
+
