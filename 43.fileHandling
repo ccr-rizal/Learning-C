@@ -1,0 +1,34 @@
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+	/*3 main file type 
+	1. 'r' It stands for read.
+	2.'w' It stands for write.
+	3. 'a' It stands for append.
+		*/
+//Writing a file
+		FILE * fpointer = fopen("bill.txt", "w");
+		fprintf(fpointer, "Jim, Salesman\nPdam, Bro\nRajesh, hero");
+		//Appending a file
+			FILE * fpointer = fopen("bill.txt", "w");
+		fprintf(fpointer, "\nRamu, Kamina");  // Enable us to add information in file		
+
+		//Reading a file:
+		char line[500];
+		FILE * fpointer = fopen("bill.txt", "r");
+		
+		fgets(line, 500, fpointer);
+			fgets(line, 500, fpointer);
+		printf("%s", line);
+		
+		
+		fclose(fpointer);
+			
+					
+	
+
+
+	getch();
+	return 0;
+}
