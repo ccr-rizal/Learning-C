@@ -1,0 +1,13 @@
+#include<stdio.h>
+void name();
+int main()
+{
+	printf("Hello world.\n");
+	name();
+	
+	return 0;
+}
+
+void name(){
+	printf("Hi,it's Shishir Sharma Rijal.");
+}
