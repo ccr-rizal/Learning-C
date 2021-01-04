@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int a, *pointer;
+	a=30;
+	pointer = &a;
+	
+	printf("The value of a is %d.\n",a);
+	printf("The memory location of a is %p.\n",pointer);
+	printf("The value at %p id %d.\n",pointer,*pointer);
+	printf("The memory of a is %p.\n",&a);
+	
+	
+	return 0;
+}
