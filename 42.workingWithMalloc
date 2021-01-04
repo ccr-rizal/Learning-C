@@ -1,0 +1,24 @@
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+	int a, i, *p;
+	printf("Enter the size of array: ");
+	scanf("%d",&a);
+	p = (int *) malloc(a*sizeof(int));
+	
+	if(p == NULL){
+		printf("Memory allocation Failed.");
+	}else{
+		for(i=0; i<a; i++){
+			printf("Enter the value of p[%d]: ",i+1);
+			scanf("%d",&p[i]);
+			
+		}
+		for(i=0; i<a; i++){
+			printf("The value at p[%d] is %d and the address is %d\n",i+1,p[i],&p[i]);
+			free(p);
+	}
+}
+	return 0;
+}
