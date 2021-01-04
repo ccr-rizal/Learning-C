@@ -1,0 +1,18 @@
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+
+	char ch;
+	printf("Enter a character: ");
+	scanf("%c",&ch);
+	int result;
+	result = ispunct(ch);
+	if(result == 0){
+		printf("The character isn't a punctuation character.");
+	}else{
+			printf("The character is a punctuation character.");
+	}
+
+	return 0;
+}
