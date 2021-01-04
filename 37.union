@@ -1,0 +1,23 @@
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+union employee{
+	char name[30];
+	int id;
+	int salary;
+};
+
+int main()
+{
+	union employee e1;
+	strcpy(e1.name, "Rajesh");
+	printf("Employee Details:\nName: %s\n",e1.name);
+		e1.id = 15;
+	printf("ID: %d\n",e1.id);
+	
+	e1.salary = 20000;
+	printf("Salary: %d\n",e1.salary);
+
+	getch();
+	return 0;
+}
