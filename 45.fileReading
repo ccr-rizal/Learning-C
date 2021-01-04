@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	char ch;
+	fp=fopen("first.txt","r");
+	if(fp==NULL)
+	{
+		printf("File not found.");
+	}
+	while(ch != EOF){
+		ch=fgetc(fp);
+		printf("%c",ch);
+	}
+	return 0;
+}
