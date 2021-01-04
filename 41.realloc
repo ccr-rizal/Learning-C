@@ -1,0 +1,25 @@
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	//realloc >> you can change the size of previously allocated memory
+	//Syntax: pointer = realloc(ptr, x);
+	
+	char *p;
+	p = (char *) malloc(4*sizeof(char));
+	strcpy(p, "Shishir Rijal");
+	printf("%s is value and %u is address\n",p,p);
+	
+	if(p == NULL){
+		printf("Memory allocation failed.");
+	}else{
+		p = realloc(p, 300*sizeof(char));
+			strcpy(p, "My name is Shishir Rijal.");
+	printf("%s is value and %u is address\n",p,p);
+	}
+	
+	
+
+	return 0;
+}
