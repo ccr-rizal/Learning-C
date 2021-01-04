@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	
+char array[4] = {'a', 'b', 'c','\0'};
+printf("%c\n",array[1]);
+printf("%c\n",array[2]);
+printf("%s\n",array);
+
+char name[] = "Shishir";
+printf("%s\n",name);
+printf("%c\n",name[3]);
+
+	getch();
+	return 0;
+}
