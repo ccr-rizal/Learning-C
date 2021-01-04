@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	char word[40];
+	printf("Enter a word:");
+	scanf("%s",&word);
+	int length = strlen(word);
+	printf("The word %s has %d characters.",word,length);
+	
+
+	getch();
+	return 0;
+}
