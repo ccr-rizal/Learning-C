@@ -1,0 +1,12 @@
+#include<stdio.h>
+void variable(char name[]);
+int main()
+{
+	variable("Shishir");
+
+	return 0;
+}
+
+void variable(char name[]){
+	printf("Hello %s",name);
+	}
