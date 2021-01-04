@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+
+	char fname[40] = "Shishir";
+	char lname[40] = "Shishir";
+	strupr(fname);
+	printf("My name is %s\n",fname);
+	int comp = strcmp(fname,lname);
+	if(comp == 0){
+		printf("Both strings are equal");
+	}else{
+		printf("The strings are unequal");
+	}
+
+	getch();
+	return 0;
+}
