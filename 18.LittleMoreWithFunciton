@@ -1,0 +1,17 @@
+#include<stdio.h>
+void display();
+int main()
+{
+	int i;
+	for(i=0;i<10;i++){
+	display();	
+	}
+
+	return 0;
+}
+
+void display(){
+	static int num = 1;
+	printf("Hello from number %d.\n",num);
+	num++;
+	}
