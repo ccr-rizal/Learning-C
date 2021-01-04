@@ -1,0 +1,26 @@
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	//allocates memory and initializes all bits to zero.
+	//pointer = (float *) calloc(25, sizeof(float)
+		int a , i , *p;
+	printf("Enter the size of array: ");
+	scanf("%d",&a);
+	p = (int *) calloc(a, sizeof(int));
+	if(p==NULL){
+		printf("Operation Failed.");
+	}else{
+		
+		for(i=0; i<a; i++){
+			printf("Enter the value for array p[%d]: ",i+1);
+			scanf("%d",&p[i]);
+		}
+		for(i=0; i<a; i++){
+			printf("The value at p[%d] is %d and address is %d\n",i+1,p[i],&p[i]);	
+	}
+	free(p);    //free
+}
+	return 0;
+}
