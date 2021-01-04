@@ -1,0 +1,24 @@
+#include<conio.h>
+#include<stdio.h>
+	struct student{
+		char name[30];
+		int id;
+		int marks;
+		
+	};
+		struct address{
+	char address[200];
+	struct student s;
+	};
+	
+int main()
+{
+	struct address a;
+	printf("Enter the Name,ID,Marks and Address of Student: \n");
+	scanf("%s %d %d %s",&a.s.name, &a.s.id, &a.s.marks, &a.address);
+	
+	printf("Student 1:\n Name: %s\n ID: %d\n Marks: %d\n Address: %s",a.s.name, a.s.id, a.s.marks, a.address);
+	
+	getch();
+	return 0;
+}
